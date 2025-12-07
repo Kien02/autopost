@@ -8,6 +8,9 @@ export default defineConfig(({ mode }) => {
       server: {
         port: 3000,
         host: '0.0.0.0',
+
+        // 👉 Thêm dòng này
+        allowedHosts: ["autopost-iw11.onrender.com"]
       },
       plugins: [react()],
       define: {
